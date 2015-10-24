@@ -9,6 +9,15 @@ h1 {
 
 /* Utilities
 ==================================*/
+
+.scroll {
+    height: 100%;
+}
+ 
+#map {
+    width: 100%;
+    height: 100%;
+}
 .title-bordered {
     border-top: solid 2px #bbb;
     padding-top: 30px;

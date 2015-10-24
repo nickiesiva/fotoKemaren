@@ -1,8 +1,49 @@
 <ion-view view-title="Statistik">
-    <ion-content ng-class="{expanded:isExpanded}" class="animate-fade-slide-in">
+    <ion-content ng-class="{expanded:isExpanded}">
+
+    <div class="card" style="background-color: #E0E2E4">
+  		<h4 style="text-align:center"><b>Statistik Kemaren</b></h4> <br/>
+  		<table border=1 width=100%>
+			<tr>
+				<td width=25%>All User</td>
+				<td width=25%>All Foto</td>
+				<td width=25%>Jogja User</td>
+				<td width=25%>Jogja Foto</td>
+			</tr>
+			<tr>
+				<td width=25%><p>2031</p></td>
+				<td width=25%><p>4132</p></td>
+				<td width=25%><p>565</p></td>
+				<td width=25%><p>736</p></td>
+			</tr>
+		</table>
+	</div> 
+
+	<div class="list">
+
+	  <label class="item item-input item-select">
+	    <div class="input-label">
+	       Kota
+	    </div>
+	    <select>
+	      <option selected>Jogja</option>
+	      <option >Solo</option>
+	      <option>Sragen</option>
+	    </select>
+	  </label>
+
+	</div>
+	
       <!-- <div class="row" id="chart1" config="chartConfig" class="span10" style="min&#45;width: 310px; max&#45;width: 800px; height: 400px; margin: 0 auto"> -->
       <div class="row">
         <highchart id="chart1" config="chartConfig" class="span10" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></highchart>
       </div>
     </ion-content>
 </ion-view>
+
+<style type="text/css">
+	td{
+		text-align: center;
+	}
+</style>
+

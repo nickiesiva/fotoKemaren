@@ -103,6 +103,7 @@ angular.module('starter.controllers', [])
     $scope.$parent.clearFabs();
     $scope.$parent.setHeaderFab('left');
 
+
     $scope.addPoints = function () {
       var seriesArray = $scope.chartConfig.series
         var rndIdx = Math.floor(Math.random() * seriesArray.length);
@@ -136,7 +137,7 @@ angular.module('starter.controllers', [])
         }
       },
       title: {
-        text: 'Statistik Kemaren'
+        text: 'Grafik Laporan'
       },
       xAxis: {
         categories: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des']
@@ -170,26 +171,27 @@ angular.module('starter.controllers', [])
     }
 })
 
-.controller('FriendsCtrl', function($scope, $stateParams, $timeout, ionicMaterialInk, ionicMaterialMotion, Camera) {
+.controller('FriendsCtrl', function($scope, $stateParams, $timeout, ionicMaterialInk, ionicMaterialMotion, Camera,$ionicLoading) {
+
     // Set Header
     $scope.$parent.showHeader();
     $scope.$parent.clearFabs();
     $scope.$parent.setHeaderFab('left');
 
-  $scope.getPhoto = function() {                                                                                                                                      
-    console.log('Getting camera');                                                                                                                                    
-    Camera.getPicture({                                                                                                                                               
-      quality: 75,                                                                                                                                                    
-      targetWidth: 320,                                                                                                                                               
-      targetHeight: 320,                                                                                                                                              
-      saveToPhotoAlbum: false                                                                                                                                         
-    }).then(function(imageURI) {                                                                                                                                      
-      console.log(imageURI);                                                                                                                                          
-      $scope.lastPhoto = imageURI;                                                                                                                                    
-    }, function(err) {                                                                                                                                                
-      console.err(err);                                                                                                                                               
-    });                                                                                                                                                               
-  }                                                                                                                                                                   
+  // $scope.getPhoto = function() {                                                                                                                                      
+  //   console.log('Getting camera');                                                                                                                                    
+  //   Camera.getPicture({                                                                                                                                               
+  //     quality: 75,                                                                                                                                                    
+  //     targetWidth: 320,                                                                                                                                               
+  //     targetHeight: 320,                                                                                                                                              
+  //     saveToPhotoAlbum: false                                                                                                                                         
+  //   }).then(function(imageURI) {                                                                                                                                      
+  //     console.log(imageURI);                                                                                                                                          
+  //     $scope.lastPhoto = imageURI;                                                                                                                                    
+  //   }, function(err) {                                                                                                                                                
+  //     console.err(err);                                                                                                                                               
+  //   });                                                                                                                                                               
+  // }                                                                                                                                                          
 
     // Delay expansion
     $timeout(function() {
@@ -202,6 +204,7 @@ angular.module('starter.controllers', [])
 
     // Set Ink
     ionicMaterialInk.displayEffect();
+
 })
 
 .controller('ProfileCtrl', function($scope, $stateParams, $timeout, ionicMaterialMotion, ionicMaterialInk) {
@@ -281,6 +284,31 @@ angular.module('starter.controllers', [])
       console.err(err);                                                                                                                                               
     });                                                                                                                                                               
   }                                                                                                                                                                   
+})      
+
+.controller('tindakanCtrl', function($scope, $stateParams, $timeout, ionicMaterialMotion, ionicMaterialInk) {                                                                                                        
+       // Set Header
+    $scope.$parent.showHeader();
+    $scope.$parent.clearFabs();
+    $scope.isExpanded = false;
+    $scope.$parent.setExpanded(false);
+    $scope.$parent.setHeaderFab(false);
+
+    // Set Motion
+    $timeout(function() {
+        ionicMaterialMotion.slideUp({
+            selector: '.slide-up'
+        });
+    }, 300);
+
+    $timeout(function() {
+        ionicMaterialMotion.fadeSlideInRight({
+            startVelocity: 3000
+        });
+    }, 700);
+
+    // Set Ink
+    ionicMaterialInk.displayEffect();                                                                                                                                                 
 })       
 
 ;

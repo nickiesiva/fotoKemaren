@@ -155,6 +155,19 @@ angular.module('starter', [ 'starter.controllers', 'ionic', 'ionic-material', 'i
         }
     })
 
+    .state('app.tindakan', {
+        url: '/tindakan',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/tindakan.html',
+                controller: 'tindakanCtrl'
+            },
+            'fabContent': {
+                template: ''
+            }
+        }
+    })
+
     .state('app.profile', {
         url: '/profile',
         views: {
