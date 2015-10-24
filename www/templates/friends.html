@@ -1,0 +1,42 @@
+<ion-view view-title="Friends">
+    <ion-content ng-class="{expanded:isExpanded}">
+        <div class="content has-header">
+            <div class="list animate-fade-slide-in-right">
+
+            <div class="fr">
+                <form novalidate>
+                    <div class="list">                
+                        <label class="item item-input item-floating-label"> 
+                            <span class="input-label">First Name</span> 
+                            <input style="weight:10px" type="text" placeholder="Nama Kepala Keluarga" ng-model="keluarga.nama"> 
+                        </label> 
+                        <label class="item item-input item-floating-label"> 
+                            <span class="input-label">Alamat</span> 
+                            <input type="text" placeholder="Alamat" ng-model="keluarga.alamat"> 
+                        </label> <br />
+                        <label class="item item-input item-floating-label"> 
+                            <span class="input-label">Description</span> 
+                            <textarea placeholder="Description" ng-model="keluarga.description"> </textarea>
+                        </label> <br /> 
+                       <label class="item item-input item-floating-label">
+                            Foto Keluarga  <br /> 
+                            <input type="file" title="Foto Keluarga" ng-model="keluarga.foto"> 
+                        </label> 
+                         <br /> 
+                         <br /> 
+                        <button class="button button-block button-calm ink" data-ink-color="#9DEAFF" data-ink-opacity="1"> Submit </button>       
+                    </div>
+                </form>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
+
+<style type="text/css">
+    .fr{
+            width: 85%;
+            margin: 0 auto;
+    }
+</style>
+
+

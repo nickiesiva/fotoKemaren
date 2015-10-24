@@ -1,0 +1,41 @@
+<ion-view view-title="Upload Form">
+    <ion-content ng-class="{expanded:isExpanded}">
+      <div class="pembungkus">
+        <label class="item item-input item-select">
+          <div class="input-label">
+            Kategori
+          </div>
+          <select>
+            <option>Gelandangan</option>
+            <option selected>Pengemis</option>
+            <option>Anak Jalanan</option>
+          </select>
+        </label>
+        <button ng-click="getPhoto()" class="button button-block button-primary"><i class="icon ion-camera"></i> Ambil Foto</button>                                                                    
+        <img ng-src="{{lastPhoto}}" style="width: 100%">                                                                                                            
+        <button class="button button-block button-positive uploadbottom">
+            Upload
+        </button>
+      </div>
+    </ion-content>  
+</ion-view>
+
+<style type="text/css">
+    .fr{
+            width: 85%;
+            margin: 0 auto;
+    }
+
+    .pembungkus {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .button.button-block.button-positive.uploadbottom {
+      margin-bottom: 20px;
+    }
+</style>
+
+

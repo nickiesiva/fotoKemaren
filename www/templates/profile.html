@@ -1,0 +1,62 @@
+<ion-view view-title="Profile">
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+        <div class="hero slide-up" style="background-image: url('img/matback.jpg');">
+            <div class="content">
+                <div class="avatar" style="background-image: url('img/nick_ph.jpg');"></div>
+                <h3 class="jeneng"><a class="light">Nicky Valentino</a></h3>
+            </div>
+        </div>
+        <div class="tabs tabs-dark tabs-icon-top static">
+            <a ui-sref="app.profile" class="tab-item">
+                <i class="icon ion-ios-copy"></i> Profil 
+            </a>
+            <a ui-sref="app.friends" class="tab-item">
+                <i class="icon ion-ios-cloud-upload"></i> Upload 
+            </a>
+            <a ui-sref="app.stat" class="tab-item">
+                <i class="icon ion-stats-bars"></i> Statistik
+            </a>
+        </div>
+        <h4 class="content padding double-padding-x">Recently Uploaded (Radius 10KM)</h4>
+        <div class="wrapis">
+          <div class="list half">
+              <div ui-sref="app.profile" class="card card-gallery item item-text-wrap">
+                  <div class="ink dark-bg">
+                      <img class="full-image" src="img/sansa-snowcastle3.jpg">
+                  </div>
+              </div>
+              <div ui-sref="app.profile" class="card card-gallery item item-text-wrap">
+                  <div class="ink dark-bg">
+                      <img class="full-image" src="img/sansa-snowcastle.png">
+                  </div>
+              </div>
+          </div>
+          <div class="list half">
+              <div ui-sref="app.profile" class="card card-gallery item item-text-wrap">
+                  <div class="ink dark-bg">
+                      <img class="full-image" src="img/sansa-snowcastle2.jpg">
+                  </div>
+              </div>
+              <div ui-sref="app.profile" class="card card-gallery item item-text-wrap">
+                  <div class="ink dark-bg">
+                      <img class="full-image" src="img/sansa-snowcastle4.jpg">
+                  </div>
+              </div>
+          </div>
+        </div>
+    </ion-content>
+</ion-view>
+<style>
+  .ink.dark-bg {
+      height: 70px;
+  }
+
+  .content .jeneng {
+    margin-bottom: 15px;
+  }
+
+  .tabs.tabs-dark.tabs-icon-top.static {
+    border-color: white;
+  }
+  
+</style>

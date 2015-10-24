@@ -1,0 +1,93 @@
+<ion-view view-title="Data Keluarga Miskin">
+    <ion-content ng-class="{expanded:isExpanded}" class="animate-fade-slide-in">
+        <div class="list half">
+            <div ui-sref="app.profile" class="card card-gallery item item-text-wrap">
+                <div class="ink dark-bg">
+                  <div class="tinggigambar">
+                    <img class="full-image" src="img/gakin1.jpg">
+                  </div>
+                  <div class="item keterangan">
+                      <h2>AHMAD BAGIO </h2>
+                      <p><i class="icon ion-location"></i>&nbsp;&nbsp;&nbsp;Bantul, Yogyakarta</p>
+                      <h1><i class="icon geserkanan ion-minus-circled"></i></h1>
+                  </div>
+                </div>
+            </div>
+            <div ui-sref="app.profile" class="card card-gallery item item-text-wrap">
+                <div class="ink dark-bg">
+                  <div class="tinggigambar">
+                    <img class="full-image" src="img/gakin2.jpg">
+                  </div>
+                  <div class="item keterangan">
+                    <h2>SUHARTO</h2>
+                      <p><i class="icon ion-location"></i>&nbsp;&nbsp;&nbsp;Demak, Jawa Tengah</p>
+                      <h1><i class="icon geserkanan ion-checkmark-circled"></i></h1>
+                  </div>
+                </div>
+            </div>
+            <div ui-sref="app.profile" class="card card-gallery item item-text-wrap">
+                <div class="ink dark-bg">
+                  <div class="tinggigambar">
+                    <img class="full-image" src="img/gakin3.jpg">
+                  </div>
+                  <div class="item keterangan">
+                      <h2>RAKURSO INDANTO</h2>
+                      <p><i class="icon ion-location"></i>&nbsp;&nbsp;&nbsp;Gresik, Jawa Timur</p>
+                      <h1><i class="icon geserkanan ion-checkmark-circled"></i></h1>
+                  </div>
+                </div>
+            </div>
+            <div ui-sref="app.profile" class="card card-gallery item item-text-wrap">
+                <div class="ink dark-bg">
+                  <div class="tinggigambar">
+                    <img class="full-image" src="img/gakin4.jpg">
+                  </div>
+                  <div class="item keterangan">
+                      <h2>WASILAH SUKERTI</h2>
+                      <p><i class="icon ion-location"></i>&nbsp;&nbsp;&nbsp;Pekalongan, Jawa Tengah</p>
+                      <h1><i class="icon geserkanan ion-minus-circled"></i></h1>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
+
+<style>
+  .tinggigambar {
+    height: 140px;
+    top: 0;
+    left: 0;
+  }
+
+  .card.card-gallery.item.item-text-wrap.in.in.done.done {
+    width: 355px;
+  }
+
+  .item.keterangan.in.in.done {
+      background-color: rgba(33, 40, 47, 0.65);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+      height: 53px;
+  }
+
+  .item.keterangan p {
+    font-style: italic;
+    color: white;
+  }
+
+  .list .card.card-gallery.item h2 {
+      padding: 0px;
+      font-weight: 900;
+      margin-top: -10px;
+  }
+
+  .item .keterangan h1 {
+    float: right;
+    margin-top: -38px;
+    font-size: 30px;
+  }
+  
+</style>
