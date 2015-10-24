@@ -1,45 +1,70 @@
 <ion-view view-title="Profile">
     <ion-content ng-class="{expanded:$scope.isExpanded}">
-        <div class="hero slide-up" style="background-image: url('img/matback.jpg');">
+        <div class="hero slide-up" style="background-image: url('');">
             <div class="content">
                 <div class="avatar" style="background-image: url('img/nick_ph.jpg');"></div>
-                <h3 class="jeneng"><a class="light">Nicky Valentino</a></h3>
+                <div class="jenengbung"><h4 class="jeneng"><a class="light">Nicky Valentino</a></h4></div>
+                <div class="kotakketer">
+                  <a href=""><p class="ketenya">16<br/><span>submit</span></p></a>
+                  <a href=""><p class="ketenya">6<br/><span>tindakan</span></p></a>
+                  <a href=""><p class="ketenya">10<br/><span>pending</span></p></a>
+                </div>
             </div>
         </div>
         <div class="tabs tabs-dark tabs-icon-top static">
             <a ui-sref="app.profile" class="tab-item">
                 <i class="icon ion-ios-copy"></i> Profil 
             </a>
-            <a ui-sref="app.friends" class="tab-item">
+            <a ui-sref="app.jepret" class="tab-item">
                 <i class="icon ion-ios-cloud-upload"></i> Upload 
             </a>
             <a ui-sref="app.stat" class="tab-item">
                 <i class="icon ion-stats-bars"></i> Statistik
             </a>
         </div>
-        <h4 class="content padding double-padding-x">Recently Uploaded (Radius 10KM)</h4>
+        <!-- <h4 class="content padding double&#45;padding&#45;x">Recently Uploaded (Radius 10KM)</h4> -->
         <div class="wrapis">
           <div class="list half">
               <div ui-sref="app.profile" class="card card-gallery item item-text-wrap">
                   <div class="ink dark-bg">
-                      <img class="full-image" src="img/sansa-snowcastle3.jpg">
+                      <img class="full-image" src="img/gakin1.jpg">
                   </div>
               </div>
               <div ui-sref="app.profile" class="card card-gallery item item-text-wrap">
                   <div class="ink dark-bg">
-                      <img class="full-image" src="img/sansa-snowcastle.png">
+                      <img class="full-image" src="img/gakin2.jpg">
+                  </div>
+              </div>
+              <div ui-sref="app.profile" class="card card-gallery item item-text-wrap">
+                  <div class="ink dark-bg">
+                      <img class="full-image" src="img/gakin3.jpg">
+                  </div>
+              </div>
+              <div ui-sref="app.profile" class="card card-gallery item item-text-wrap">
+                  <div class="ink dark-bg">
+                      <img class="full-image" src="img/gakin2.jpg">
                   </div>
               </div>
           </div>
           <div class="list half">
               <div ui-sref="app.profile" class="card card-gallery item item-text-wrap">
                   <div class="ink dark-bg">
-                      <img class="full-image" src="img/sansa-snowcastle2.jpg">
+                      <img class="full-image" src="img/gakin4.jpg">
                   </div>
               </div>
               <div ui-sref="app.profile" class="card card-gallery item item-text-wrap">
                   <div class="ink dark-bg">
-                      <img class="full-image" src="img/sansa-snowcastle4.jpg">
+                      <img class="full-image" src="img/gakin1.jpg">
+                  </div>
+              </div>
+              <div ui-sref="app.profile" class="card card-gallery item item-text-wrap">
+                  <div class="ink dark-bg">
+                      <img class="full-image" src="img/gakin2.jpg">
+                  </div>
+              </div>
+              <div ui-sref="app.profile" class="card card-gallery item item-text-wrap">
+                  <div class="ink dark-bg">
+                      <img class="full-image" src="img/gakin3.jpg">
                   </div>
               </div>
           </div>
@@ -56,7 +81,61 @@
   }
 
   .tabs.tabs-dark.tabs-icon-top.static {
-    border-color: white;
+    border-color: rgb(68, 68, 68);
+    margin-top: -55px;
+    background-color: white;
+    color: black;
+    padding-top: 5px;
+  }
+
+  .hero>.content>.avatar {
+    background-position: center;
+    background-size: cover;
+    border: solid 1px rgba(255,255,255,.8);
+    border-radius: 50%;
+    display: inline-block;
+    height: 88px;
+    left: 20px;
+    margin-bottom: 10px;
+    position: inherit;
+    width: 88px;
+    margin-top: -173px;
+  }
+
+  .avatar {
+    float: left;
+  }
+
+  .jenengbung {
+    float: right;
+    margin-top: -176px;
+    margin-right: 60px;
+  }
+
+  .light, a.light {
+      color: black;
+      font-size: 22px;
+  }
+
+  .kotakketer {
+    float: right;
+    margin-top: -140px;
+    margin-right: 20px;
+    background-color: rgb(68, 68, 68);
+    width: 220px;
+    border-radius: 7px;
+  }
+
+  .kotakketer p {
+    float: left;
+    color: white;
+    margin-top: 5px;
+    margin-left: 18px;
+    margin-bottom: 5px;
+  }
+
+  .wrapis {
+    margin-top: 8px;
   }
   
 </style>
