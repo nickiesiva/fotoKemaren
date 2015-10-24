@@ -98,6 +98,14 @@ angular.module('starter.controllers', [])
     ionicMaterialInk.displayEffect();
 })
 
+.controller('LoginPemdaCtrl', function($scope, $timeout, $stateParams, ionicMaterialInk) {
+    $scope.$parent.clearFabs();
+    $timeout(function() {
+        $scope.$parent.hideHeader();
+    }, 0);
+    ionicMaterialInk.displayEffect();
+})
+
 .controller('StatCtrl', function($scope, $timeout, $stateParams, ionicMaterialInk) {
     $scope.$parent.showHeader();
     $scope.$parent.clearFabs();

@@ -142,6 +142,19 @@ angular.module('starter', [ 'starter.controllers', 'ionic', 'ionic-material', 'i
         }
     })
 
+    .state('app.loginPemda', {
+        url: '/loginPemda',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/loginPemda.html',
+                controller: 'LoginPemdaCtrl'
+            },
+            'fabContent': {
+                template: ''
+            }
+        }
+    })
+
     .state('app.stat', {
         url: '/stat',
         views: {
