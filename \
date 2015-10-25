@@ -1,7 +1,5 @@
 <ion-view view-title="Statistik">
 <ion-content ng-class="{expanded:isExpanded}">
-<ion-scroll>
-<div class="">
 
 <div class="card" style="background-color: #E0E2E4">
   <h4 style="text-align:center"><b>Statistik Umum</b></h4> <br/>
@@ -23,27 +21,25 @@
   </div>
 </div> 
 
-<div class="bungkusan list">
-  <h4><strong>Statistik per Kota/Kabupaten</strong></h4>
-  <div class="list">
-    <label class="item item-input item-select">
-      <div class="input-label">
-        Pilih Kota/Kabupaten
-      </div>
-      <select>
-        <option selected>Jogja</option>
-        <option >Solo</option>
-        <option>Sragen</option>
-      </select>
-    </label>
-  </div>
+<div class="list">
 
-  <div class="rowas">
-    <highchart id="chart1" config="chartConfig" class="span10" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></highchart>
-  </div>
+  <label class="item item-input item-select">
+    <div class="input-label">
+      Kota
+    </div>
+    <select>
+      <option selected>Jogja</option>
+      <option >Solo</option>
+      <option>Sragen</option>
+    </select>
+  </label>
+
 </div>
+
+<!-- <div class="row" id="chart1" config="chartConfig" class="span10" style="min&#45;width: 310px; max&#45;width: 800px; height: 400px; margin: 0 auto"> -->
+<div class="row">
+  <highchart id="chart1" config="chartConfig" class="span10" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></highchart>
 </div>
-</ion-scroll>
 </ion-content>
 </ion-view>
 
@@ -79,7 +75,6 @@ td{
     width: 50%;
     text-align: center;
     margin-top: 25px;
-    margin-bottom: 20px;
   }
 
   .data3 p {
@@ -97,23 +92,6 @@ td{
   .data4 p {
     margin-bottom: 0px;
     font-style: italic;
-  }
-
-  .bungkusan h4 {
-    text-align: center;
-  }
-
-  .bungkusan {
-    margin-top: 35px;
-  }
-
-  .list {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .rowas {
-    margin-bottom: 20px;
   }
 </style>
 
