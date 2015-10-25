@@ -194,6 +194,19 @@ angular.module('starter', [ 'starter.controllers', 'ionic', 'ionic-material', 'i
         }
     })
 
+    .state('app.peta', {
+        url: '/peta',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/peta.html',
+                controller: 'petaCtrl'
+            },
+            'fabContent': {
+                template: ''
+            }
+        }
+    })
+
     .state('app.profile', {
         url: '/profile',
         views: {
