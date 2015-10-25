@@ -1,28 +1,21 @@
 <ion-view view-title="Profile">
     <ion-content ng-class="{expanded:$scope.isExpanded}">
-        <div class="hero slide-up" style="background-image: url('');">
-            <div class="content">
-                <div class="avatar" style="background-image: url('img/nick_ph.jpg');"></div>
-                <div class="jenengbung"><h4 class="jeneng"><a class="light">Nicky Valentino</a></h4></div>
-                <div class="kotakketer">
-                  <a ui-sref="app.gallery"><p class="ketenya">16<br/><span>submit</span></p></a>
-                  <a ui-sref="app.tindakan"><p class="ketenya">6<br/><span>tindakan</span></p></a>
-                  <a href=""><p class="ketenya">10<br/><span>pending</span></p></a>
-                </div>
+        <div class="hero slide-up">
+
+           <div class="card">
+            <div class="item item-text-wrap">
+              <h2 style="font-size: 18px;">  <b>Lokasi Anda</b></h2> 
+                <p class="jln">Jalan Perintis Kemerdekaan, Wirokerten, Banguntapan, Bantul, Yogyakarta</p>
+              <em><p class="tanggalsweep">12 Mei 2015</p></em>
             </div>
+          </div><br>
+
+          <button class="button button-block button-positive uploadbottom">
+            Konfirmasi Tindakan
+          </button>
+
         </div>
-        <div class="tabs tabs-dark tabs-icon-top static">
-            <a ui-sref="app.peta" class="tab-item">
-                <i class="icon ion-ios-copy"></i> Profil 
-            </a>
-            <a ui-sref="app.jepret" class="tab-item">
-                <i class="icon ion-ios-cloud-upload"></i> Upload 
-            </a>
-            <a ui-sref="app.stat" class="tab-item">
-                <i class="icon ion-stats-bars"></i> Statistik
-            </a>
-        </div>
-        <!-- <h4 class="content padding double&#45;padding&#45;x">Recently Uploaded (Radius 10KM)</h4> -->
+
         <div class="wrapis">
           <div class="list half">
               <div ui-sref="app.profile" class="card card-gallery item item-text-wrap">
