@@ -181,6 +181,19 @@ angular.module('starter', [ 'starter.controllers', 'ionic', 'ionic-material', 'i
         }
     })
 
+    .state('app.tindakanPemda', {
+        url: '/tindakanPemda',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/tindakanPemda.html',
+                controller: 'tindakanPemdaCtrl'
+            },
+            'fabContent': {
+                template: ''
+            }
+        }
+    })
+
     .state('app.profile', {
         url: '/profile',
         views: {
@@ -190,6 +203,24 @@ angular.module('starter', [ 'starter.controllers', 'ionic', 'ionic-material', 'i
             },
             'fabContent': {
                 template: '<button ui-sref="app.jepret" id="fab-profile" class="button button-fab button-fab-bottom-right button-energized-900"><i class="icon ion-plus"></i></button>',
+                controller: function ($timeout) {
+                    /*$timeout(function () {
+                        document.getElementById('fab-profile').classList.toggle('on');
+                    }, 800);*/
+                }
+            }
+        }
+    })
+
+    .state('app.profilePemda', {
+        url: '/profilePemda',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/profilPemda.html',
+                controller: 'ProfilePemdaCtrl'
+            },
+            'fabContent': {
+                template: '<button ui-sref="app.tindakanPemda" id="fab-profile" class="button button-fab button-fab-bottom-right button-energized-900"><i class="icon ion-plus"></i></button>',
                 controller: function ($timeout) {
                     /*$timeout(function () {
                         document.getElementById('fab-profile').classList.toggle('on');
